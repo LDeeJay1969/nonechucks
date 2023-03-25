@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 def _get_pytorch_version():
     version = torch.__version__
-    print("PyTorch Version: " + version
+    print("PyTorch Version: " + version)
     if '+' in version:
         # e.g. 1.6.0+cu101
         version = version[:version.index('+')]
