@@ -15,7 +15,7 @@ def _get_pytorch_version():
     major, minor = [int(x) for x in version.split(".")[:2]]
     if major != 1:
         raise RuntimeError(
-            "nonechucks only supports PyTorch major version 1 at the moment."
+            "nonechucks only supports PyTorch version up to 1.7 at the moment."
         )
     if minor > 7:
         logger.warn(
